@@ -1,0 +1,16 @@
+/* ============================================
+   NOSSO PONTO - Footer Styles
+   Estilos do rodapé
+   ============================================ */
+
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
