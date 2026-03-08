@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { MenuItem as MenuItemType } from "@/types";
 
 interface MenuItemProps {
@@ -10,7 +9,7 @@ interface MenuItemProps {
 
 export function MenuItem({ item, onAddToCart }: MenuItemProps) {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg hover:lift transition-all duration-300 border border-primary/10">
+    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-primary/10 hover-lift">
       <div className="relative w-full h-48 overflow-hidden bg-gray-200">
         <img
           src={item.image}

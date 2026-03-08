@@ -1,6 +1,8 @@
 "use client";
 
 export function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-text text-light py-12">
       <div className="container mx-auto px-4">
@@ -43,14 +45,14 @@ export function Footer() {
           {/* Contact */}
           <div>
             <h4 className="font-heading font-bold mb-4">CONTATO</h4>
-            <p className="text-sm mb-2">📍 Ariquemes, RO</p>
-            <p className="text-sm mb-2">📞 (69) 9 9999-9999</p>
-            <p className="text-sm">✉️ contato@nossoponto.com</p>
+            <p className="text-sm mb-2">Ariquemes, RO</p>
+            <p className="text-sm mb-2">(69) 9 9999-9999</p>
+            <p className="text-sm">contato@nossoponto.com</p>
           </div>
         </div>
 
         <div className="border-t border-light/20 pt-8 text-center text-sm opacity-70">
-          <p>&copy; 2024 NOSSO PONTO - Lanchonete Rústica. Todos os direitos reservados.</p>
+          <p>&copy; {currentYear} NOSSO PONTO - Lanchonete Rústica. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
